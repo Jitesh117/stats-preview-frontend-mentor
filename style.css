@@ -1,0 +1,70 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+    --main-bg:hsl(233, 47%, 7%);
+    --card-bg:hsl(244, 38%, 16%);
+    --purple: hsl(277, 64%, 61%);
+    --trans-white:hsla(0, 0%, 100%, 0.75);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'inter',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:var(--main-bg) ;
+}
+h1{
+    color: white
+}
+.purple{
+    color: var(--purple);
+}
+.para{
+    color: var(--trans-white);
+}
+@media screen and (max-width:400px) {
+    /* this makes the photo responsive  */
+    img{
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .main{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 80px auto;
+        background-color: var(--card-bg);
+        border-radius: 10px;
+        text-align: center;
+        /* justify-content: center; */
+    }
+    .heading{
+        
+    }
+    .para{
+        margin: auto;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    .pad{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .numbers{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .bold{
+        color: white;
+        font-weight: bold;
+        padding-bottom: 5px;
+    }
+    
+}
